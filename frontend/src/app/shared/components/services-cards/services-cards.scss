@@ -1,0 +1,38 @@
+/* Fondo y contraste */
+.services-area {
+  /* ayuda a que el texto tenga buen contraste en tema oscuro */
+  color-scheme: dark;
+}
+
+/* micro-detalles visuales */
+.card-glow {
+  transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+  border-radius: 0.75rem;
+}
+.card-glow:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.06), 0 8px 24px rgba(0, 0, 0, 0.45);
+  border-color: rgba(255, 255, 255, 0.18);
+}
+
+/* Ícono */
+.icon-wrap {
+  width: 64px;
+  height: 64px;
+  display: grid;
+  place-items: center;
+}
+.icon-img {
+  width: 64px; /* respeta la proporción */
+  height: 64px;
+  object-fit: contain;
+  filter: invert(1) opacity(0.9); /* convierte trazos blancos sobre fondo oscuro */
+}
+
+/* Tipografía sutil como el ejemplo */
+.tracking-wide {
+  letter-spacing: 0.12em;
+}
+.text-body-emphasis-contrast {
+  color: #cfd3da;
+} /* gris suave para bloques largos */

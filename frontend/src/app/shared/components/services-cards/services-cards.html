@@ -1,0 +1,38 @@
+<section
+  class="services-area bg-black text-body-emphasis-contrast"
+  aria-labelledby="services-title"
+  itemscope
+  itemtype="https://schema.org/Service"
+>
+  <div class="container py-5">
+    <!-- Subtítulo pequeño -->
+    <p class="text-uppercase small text-secondary mb-2 tracking-wide">We build, lead</p>
+
+    <!-- Título SEO -->
+    <h2 id="services-title" class="display-6 fw-bold text-white mb-4">
+      Provide the Best <span class="text-secondary">Services</span>
+    </h2>
+
+    <div class="row g-4 row-cols-1 row-cols-md-2 row-cols-lg-4">
+      <article class="col" *ngFor="let s of services" itemprop="hasOfferCatalog">
+        <div class="card h-100 bg-dark border border-secondary-subtle card-glow">
+          <div class="card-body d-flex flex-column gap-3">
+            <div class="icon-wrap">
+              <img
+                [src]="s.icon"
+                [alt]="s.title + ' icon'"
+                loading="lazy"
+                decoding="async"
+                width="64"
+                height="64"
+                class="icon-img"
+              />
+            </div>
+            <h3 class="h6 text-uppercase text-white mb-1" itemprop="name">{{ s.title }}</h3>
+            <p class="mb-0 text-secondary small" itemprop="description">{{ s.desc }}</p>
+          </div>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
