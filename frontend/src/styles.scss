@@ -1,2 +1,48 @@
 /* You can add global styles to this file, and also import other style files */
 @import 'bootstrap/scss/bootstrap';
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* Paleta Vura / Dark Block */
+.theme-vura {
+  /* Base */
+  --ink-900: #181616; /* negro principal del bloque */
+  --coal-800: #3d3c41; /* gris oscuro (borde/lines) */
+  --coal-780: #403e43; /* variante de gris oscuro */
+  --paper-000: #fafbfb; /* blanco para texto en oscuro */
+  --stone-500: #a3a6a5; /* texto secundario */
+  --stone-450: #85827c; /* subtítulos */
+  --white-000: #ffffff;
+  /* Acientos del layout */
+  --warm-700: #453830; /* cálido (madera) */
+  --warm-650: #4d443a; /* cálido variante */
+  --sky-300: #a9bdc1; /* acento frío */
+  --sky-200: #b5c5c8; /* acento frío claro */
+
+  /* Tokens derivados (para usar directo) */
+  --bg-hero: var(--ink-900);
+  --bg-card: #121213; /* un hair más claro que el hero */
+  --text-strong: var(--paper-000);
+  --text-soft: var(--stone-500);
+  --border-subtle: color-mix(in srgb, var(--paper-000) 14%, transparent);
+}
+
+/* Utilidades rápidas */
+.bg-ink {
+  background-color: var(--bg-hero) !important;
+}
+.bg-card {
+  background-color: var(--bg-card) !important;
+}
+.text-strong {
+  color: var(--text-strong) !important;
+}
+.text-soft {
+  color: var(--text-soft) !important;
+}
+.border-subtle {
+  border-color: var(--border-subtle) !important;
+}

@@ -16,24 +16,24 @@ type Service = {
 export class ServicesCards {
   services: Service[] = [
     {
-      icon: 'assets/icons/architecture.svg',
-      title: 'Architecture',
-      desc: 'Architecture has to do with planning and designing form, space and ambience to reflect functional.',
+      icon: 'assets/imgs/services-card/air-vent.svg',
+      title: 'Funcionalidad',
+      desc: 'Distribuimos cada m² para flujos claros, guardado inteligente y usos versátiles; todo queda fácil, útil y adaptable.',
     },
     {
-      icon: 'assets/icons/interior-design.svg',
-      title: 'Interior Design',
-      desc: 'Designing the experience of interior space through the manipulation of spatial volumes.',
+      icon: 'assets/imgs/services-card/air-vent.svg',
+      title: 'Eficiencia',
+      desc: 'Maximizamos luz y ventilación natural, reducimos consumos y tiempos de obra con soluciones de bajo mantenimiento.',
     },
     {
-      icon: 'assets/icons/furniture-design.svg',
-      title: 'Furniture Design',
-      desc: 'Creating objects intended to support various human activities such as seating.',
+      icon: 'assets/imgs/services-card/air-vent.svg',
+      title: 'Confort',
+      desc: 'Ergonomía, acústica y temperatura pensadas; iluminación regulable para ambientes calmados que invitan a estar.',
     },
     {
-      icon: 'assets/icons/consulting.svg',
-      title: 'Consulting',
-      desc: 'Advising clients to align projects to their goals, either by a consulting firm or an agency.',
+      icon: 'assets/imgs/services-card/air-vent.svg',
+      title: 'Durabilidad',
+      desc: 'Materiales y acabados de alto rendimiento; resisten el uso diario y se mantienen impecables por años.',
     },
   ];
 }

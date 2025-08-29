@@ -1,21 +1,54 @@
-/* Fondo y contraste */
+/* Sección */
 .services-area {
-  /* ayuda a que el texto tenga buen contraste en tema oscuro */
-  color-scheme: dark;
+  padding-bottom: 120px;
+  padding-top: 120px;
+  background-color: var(--ink-900); /* #181616 */
+  color: var(--text-soft); /* #A3A6A5 */
+  color-scheme: dark; /* UI nativa en oscuro */
 }
 
-/* micro-detalles visuales */
-.card-glow {
-  transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+/* Kicker (subtítulo pequeño) */
+.services-kicker {
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: var(--stone-450); /* #85827C */
+  margin-bottom: 0.5rem;
+  font-size: 0.875rem;
+  margin-left: 3.5rem;
+}
+
+/* Título */
+.services-title {
+  font-weight: 500;
+  text-transform: uppercase;
+  color: var(--white-000);
+  line-height: 1.05;
+  margin-bottom: 2.2rem;
+  margin-left: 3.5rem;
+  font-size: clamp(1.55rem, 1rem + 2.4vw, 1.75rem);
+}
+
+.services-title .title-break {
+  margin-top: 0.45rem;
+  display: block;
+} /* fuerza salto de línea */
+
+/* Cards */
+.services-card {
+  background-color: var(--ink-900);
+  border: 1px solid var(--border-subtle);
   border-radius: 0.75rem;
+  transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+  border-radius: 0 !important; /* fuerza esquinas rectas */
+  --bs-card-border-radius: 0;
 }
-.card-glow:hover {
+.services-card:hover {
   transform: translateY(-4px);
-  box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.06), 0 8px 24px rgba(0, 0, 0, 0.45);
-  border-color: rgba(255, 255, 255, 0.18);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.45);
+  border-color: color-mix(in srgb, var(--paper-000) 28%, transparent);
 }
 
-/* Ícono */
+/* Íconos */
 .icon-wrap {
   width: 64px;
   height: 64px;
@@ -23,16 +56,22 @@
   place-items: center;
 }
 .icon-img {
-  width: 64px; /* respeta la proporción */
+  width: 64px;
   height: 64px;
   object-fit: contain;
-  filter: invert(1) opacity(0.9); /* convierte trazos blancos sobre fondo oscuro */
+  filter: invert(1) opacity(0.9); /* iconos blancos en oscuro */
 }
 
-/* Tipografía sutil como el ejemplo */
-.tracking-wide {
-  letter-spacing: 0.12em;
+/* Textos de tarjeta */
+.services-card-title {
+  font-weight: 300;
+  text-transform: uppercase;
+  color: var(--paper-000);
+  margin: 0;
+  font-size: 0.75rem;
 }
-.text-body-emphasis-contrast {
-  color: #cfd3da;
-} /* gris suave para bloques largos */
+.services-card-desc {
+  color: var(--text-soft);
+  margin: 0;
+  font-size: 0.875rem;
+}
